@@ -53,39 +53,47 @@ input {
   box-shadow: 1px 0.5px #888888;
   font-size: 20px;
 }
-.button{
+button{
   border: none;
   background-color: #00c3ff;
   color: white;
   padding: 15px 32px;
+  font-size: 30px;
+  font-weight: bold;
   text-align: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   display: inline-block;
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-left: -1100px;
   cursor: pointer;
 }
-.button2{
+.button1{
   background-color: #fffb00;
-  font-size: 30px;
-  margin-top: 70px;
-  margin-left: -1100px;
-  font-weight: bold;
-  color: #00c3ff;
+  font-size: 40px;
+  margin-left: 30px;
 }
 button:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-.Individuals{
-  margin-top: 30px;
-  width: 60%;
-  padding: 30px;
-  border: 5px inset #00c3ff;  
-  border-radius: 40px;
-  min-width: 500px;
-}
 * {
   margin: 0;
   padding: 0;
+}
+table, th, td {
+  margin-left: 70px;
+  background-color: #ffffff;
+  border: 15px outset #0099ffaf;
+  padding: 15px;
+  border-collapse: collapse;
+  width: 90%;
+}
+th, td {
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+th{
+  background-color: #2da3f19c;
 }

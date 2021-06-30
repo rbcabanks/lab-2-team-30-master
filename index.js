@@ -7,6 +7,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <Search />
+    <sortTable />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,41 +1,51 @@
-import { useScrollTrigger } from "@material-ui/core";
-import { getElementError } from "@testing-library/react";
 import React, {Component} from "react";
 import users from "./users.json";
 
-    class Search extends Component {
-    state = {};
-    render() {
-        return(
-    <div>
-        <div className="top">
-            <h1>User Search Application</h1>
-            <h3>Search by name or city</h3>
-            <input name="text" type="text" placeholder="Search" />
-            <button class="button button1">Search</button>
-        </div>
-            <div className="Sort"> 
-            <button class="button button2">Sort By City</button>
-            </div>
+class Search extends React.Component {
+    constructor(props) {
+    super(props)
+    this.state={users:users};
 
-            <div className="Container">
-            {users.map((item) => (<Card {...item} key={item.name} />
-            ))}
+    }
+    renderTableData() {
+        return this.state.users.map((user, index) => {
+            const {id, name, email, phone, address } = user 
+            return (
+              <tr key={id}>
+                 <td>{name}</td>
+                 <td>{email}</td>
+                 <td>{phone}</td>
+                 <td>{address.city}</td>
+              </tr>
+           )
+        })
+    }
+    render(){
+    return(
+        <div>
+             <div className="top">
+                <h1>User Search Application</h1>
+                <h3>Search by name or city</h3>
+                <input type="text" id="input" placeholder="Search for a name or city.."></input>
+                <button class="button button1">Search</button>
             </div>
-    </div>
-        );
+            <div className="Sort"> 
+            <button id="sorter" class="button button2">Sort By City</button>
+            </div>
+            <table id="userTable">
+            <tr class="header">
+                <th>Name</th>
+                <th>Email</th> 
+                <th>Phone</th>
+                <th>City</th>
+            </tr>   
+            <tbody>
+            {this.renderTableData()}</tbody>
+            </table>
+
+        </div>
+        
+        )
     }
 }
-const Card = ({name, email, phone, address}) => {
-    return (
-        <div className="Individuals">
-            <div className="Header">
-                <h2>Name: {name}</h2>
-                <h2>Email: {email}</h2>
-                <h2>Phone: {phone}</h2>
-                <h2>City: {address.city}</h2>
-                </div>
-        </div>
-    );
-};
 export default Search;
