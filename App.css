@@ -82,18 +82,18 @@ button:hover {
   padding: 0;
 }
 table, th, td {
-  margin-left: 70px;
   background-color: #ffffff;
-  border: 15px outset #0099ffaf;
   padding: 15px;
-  border-collapse: collapse;
-  width: 90%;
-}
-th, td {
-  padding: 20px;
-  font-size: 20px;
-  text-align: left;
+  font-size: 30px;
 }
 th{
   background-color: #2da3f19c;
+  font-size: 30px;
+}
+.bottom{
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding: 50px;
+  width: 90%;
+  background-color:rgb(230, 242, 253);
 }
