@@ -4,7 +4,9 @@ Due date: July 5th, 2021 at 11:59 EST
 View on Code SandBox
 https://codesandbox.io/s/agitated-chatterjee-vzw09
 Click "View in new Window"
-<img width="97" alt="Screen Shot 2021-08-29 at 2 58 25 PM" src="https://user-images.githubusercontent.com/85521283/131266654-1e139a02-6bf9-4d76-848e-5368d8508f0a.png">## Introduction
+<img width="97" alt="Screen Shot 2021-08-29 at 2 58 25 PM" src="https://user-images.githubusercontent.com/85521283/131266654-1e139a02-6bf9-4d76-848e-5368d8508f0a.png">
+
+## Introduction
 In this lab, you are going to create a search application with React that utilizes a list of users from the Users resource on [JSON Placeholder](https://jsonplaceholder.typicode.com/). The application should display user information and have search and filtering capabilities, as defined in Requirements. On the web, [search algorithms](https://en.wikipedia.org/wiki/Search_algorithm) are implemented in different ways depending on how they calculate relevancy (think Google, Bing, DuckDuckGo, etc.). We want you to approach the search problem as a team and build out some UI functionality as a full-stack engineers. With your previous experience of Material UI and React, you can choose to develop the UI and your components as you see fit.
 
 ## Setup
